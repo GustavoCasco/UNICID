@@ -6,7 +6,7 @@
 
 #saída: mostrar a resposta na tela
 
-print ("Digite um Numero:")
+print ("Digite um Numero: ")
 a = int(input())
 
 resp = a * 2

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2><b>Cadastro Básico</b></h2>
+    <form action="gravarCliente.php" method="post">
+
+        <!-- //Input Nome Completo -->
+        Nome Completo: <input type="text" name="nome" placeholder="Digite o nome completo"><br><br>
+
+        <!-- //Input Data Nascimento -->
+        Nascimento: <input type="date" name="dataNascimento"><br><br>
+
+        <!-- //Input Genero -->
+        Genero: 
+        <input type="radio" name="genero" id="" value="masculino">Masculino 
+        <input type="radio" name="genero" id="" value="feminino">Feminino 
+        <br><br>
+
+        <!-- //Input Estado Civil -->
+        Estado Civil: 
+        <select name="estadoCivil" id="">
+            <option selected="selected" value=" ">Escolha</option>
+            <option value="Solteiro">Solteiro</option>
+            <option value="Casado">Casado</option>
+            <option value="Viuvo">Viuvo</option>
+            <option value="Separado">Separado</option>
+            <option value="Divorciado">Divorciado</option>
+        </select>
+
+        <!-- //FORM DADOS PARA CONTATO-->
+        <H3>Dados de contato</H3>
+
+        <!-- //Input Email -->
+        Email:
+        <input type="email" name="email" style="width: 250px;">
+        <br><input type="checkbox" name="desEmail" value="sim">Deseja receber e-mails
+        <br><br>
+        <!-- //Input Telefone -->
+        DDD:(<input type="text" name=ddd style="width: 50px;" placeholder="Ex:011">)
+        Telefone: <input type="text" name="telefone" placeholder="Ex:970707070">
+        tipo:
+        <select name="tipoTel" id="">
+            <option selected="selected" value=" ">Selecione</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>
+        <br>
+
+        <!-- //Input Telefone2 -->
+        DDD:(<input type="text" name=ddd2 style="width: 50px;" placeholder="Ex:011">)
+        Telefone: <input type="text" name="telefone2" placeholder="Ex:970707070">
+        tipo:
+        <select name="tipoTel2" id="">
+            <option selected="selected" value=" ">Selecione</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>        
+        <br>
+
+        <!-- //Input Telefone3-->
+        DDD:(<input type="text" name=ddd3 style="width: 50px;" placeholder="Ex:011">)
+        Telefone: <input type="text" name="telefone3" placeholder="Ex:970707070">
+        tipo:
+        <select name="tipoTel3" id="">
+            <option selected="selected" value=" ">Selecione</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Celular">Celular</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Recados">Recados</option>
+        </select>
+        <br><br>
+        
+        <!-- Input OBS -->
+        <b>Observações</b><br>
+        <textarea name="observação" id="" cols="60" rows="5"></textarea>
+        <br><input type="submit" value="Enviar Dados">
+    </form>
+</body>
+</html>
